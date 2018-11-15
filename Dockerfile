@@ -11,7 +11,7 @@ RUN apt-get update && \
 # create develop user
 #
 RUN id develop 2>/dev/null || useradd --uid 30000 --create-home develop
-RUN echo "build ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
+RUN echo "develop ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
 USER develop
 WORKDIR  /home/develop
 
