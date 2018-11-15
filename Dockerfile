@@ -4,7 +4,7 @@ FROM ubuntu:18.04
 # base environment
 #
 RUN apt-get update && \
-    apt-get install -y vim less build-essential wget git ncurses-dev bc cmake can-utils iproute2 net-tools
+    apt-get install -y vim less build-essential wget git ncurses-dev bc libssl-dev sudo libtool autoconf cmake can-utils iproute2 net-tools
 
 
 #
